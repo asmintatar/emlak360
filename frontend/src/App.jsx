@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Link, NavLink, Navigate, Route, Routes, useNavigate } from 'react-router-dom'
+import AdminPanel from './pages/AdminPanel'
 import {
   Bath,
   BedDouble,
@@ -451,7 +452,7 @@ export default function App() {
         <Route path="/ilanlar" element={<PlaceholderPage title="İlanlar" />} />
         <Route path="/ilan-ver" element={<PlaceholderPage title="İlan Ver" />} />
         <Route path="/favoriler" element={<PlaceholderPage title="Favoriler" />} />
-        <Route path="/admin" element={<PlaceholderPage title="Yönetici Paneli" />} />
+        <Route path="/admin" element={<AdminPanel />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
